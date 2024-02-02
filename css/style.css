@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --ff: 'Poppins', sans-serif;
+
+    --clr-primary: #C1DEE8;
+    --clr-secondary: #FBD9B9;
+    --clr-black: #000000;
+    --clr-white: #ffffff;
+    --clr-gray-1: #bebebe;
+    --clr-gray-2: #fafafa;
+    --clr-text:#1F1F1F;
+
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+
+   --fs: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff);
+    font-size: var(--fs);
+    outline: none;
+}
+
+.container{
+    width: min(100% - 1rem, 1380px);
+    margin-inline: auto;
+}
+
+/*------------------HEADER-----------------*/
+.header{
+    width: 100%;
+    height:90px;
+    margin-top: 2.12rem;
+    background-color: var(--clr-gray-2);
+    border-radius: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: 1.5rem;
+    padding-left: 2.5rem;
+}
+.header img{
+    cursor: pointer;
+}
+
+/*------------------NAV-----------------*/
+.nav{
+    align-items: center;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 2.18rem;
+    background-color: var(--clr-white);
+    border-radius: 70px;
+    padding: 1.25rem 1.35rem;
+}
+.nav__link{
+    text-decoration: none;
+    color: var(--clr-text);
+    font-weight: var(--fw-regular);
+    font-size: 1rem;
+    line-height: 120%;
+    transition: color .3s;
+}
+.nav__link:hover{
+    color: var(--clr-primary);
+}
+
+/*------------------BUTTONS-----------------*/
+.btn-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--clr-text);
+    font-weight: var(--fw-regular);
+    font-size: 1rem;
+    line-height: 120%;
+    padding: 1.25rem 2.18rem;
+    border-radius: 40px;
+    border: 1px solid var(--clr-gray-1);
+    background: var(--clr-white);
+}
+.btn:hover{
+    background: var(--clr-primary);
+    color: var(--clr-white);
+    border: 1px solid var(--clr-primary);
+}
+
+.btn-dropdown{
+    display: flex;
+    align-items: center;
+    gap: .56rem;
+    cursor: pointer;
+}
+.btn-dropdown span{
+    color: var(--clr-text);
+    font-weight: var(--fw-regular);
+    font-size: 1rem;
+    line-height: 120%;
+}
+
+/*------------------SECTION-----------------*/
+.section{
+    margin-top: 2rem;
+    background: linear-gradient(to right, rgb(193, 222, 232), rgb(251, 217, 185));
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2.875rem;
+    box-sizing: border-box;
+}
+.section-left{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.title{
+    margin-top: .9rem;
+    margin-bottom: 1.5rem;
+    font-weight: var(--fw-semi-bold);
+    font-size: 4.188rem;
+    color: var(--clr-black);
+    line-height: 120%;
+}
+.subtitle{
+    font-weight: var(--fw-regular);
+    font-size: 1rem;
+    line-height: 120%;
+    color: var(--clr-black);
+    max-width: 435px;
+}
+.section-right img{
+    max-width: 785px;
+    max-height: 667px;
+    margin-bottom: -4rem;
+}
+
+.section-small{
+max-height: 457px;
+margin-top: 5.1875rem;
+}
+.section-small .section-right img{
+    margin-bottom: 0rem;
+}
+.section-small .section-left .title{
+    font-size: 3.125rem;
+}
+.section-small .section-left .subtitle{
+    max-width: 526px;
+    margin-top: 1.125rem;
+    margin-bottom: 2.8125rem;
+}
+.section-small .section-left .input-wrapper{
+   max-width: 469px;
+}
+
+.section-big{
+    max-height: 617px;
+}
+
+/*------------------INPUT-----------------*/
+.input-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 438px;
+    background: var(--clr-white);
+    border-radius: 40px;
+    margin-top: 1.5rem;
+}
+.input-wrapper input{
+    padding: 1.125rem 1.5625rem;
+    border-radius: 40px;
+    border: none;
+}
+
+
+.input-btn{
+    text-decoration: none;
+    color: var(--clr-white);
+    background-color: var(--clr-text);
+    padding: 1.125rem 1.5625rem;
+    border-radius: 40px;
+    border: 1px solid var(--clr-text);
+    transition: all .3s;
+}
+.input-btn:hover{
+    background-color: var(--clr-white);
+    color: var(--clr-text);
+}
