@@ -47,6 +47,11 @@
     padding-right: 1.5rem;
     padding-left: 2.5rem;
 }
+.header-wrapper{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
 .header img{
     cursor: pointer;
 }
@@ -137,6 +142,7 @@
     flex-direction: column;
     align-items: left;
     justify-content: center;
+    transform: translateY(-10%);
 }
 .title{
     margin-top: .9rem;
@@ -171,6 +177,7 @@ margin-top: 5.1875rem;
 }
 .section-small .section-left .title{
     font-size: 3.125rem;
+    margin: 0;
 }
 .section-small .section-left .subtitle{
     max-width: 526px;
@@ -179,6 +186,7 @@ margin-top: 5.1875rem;
 }
 .section-small .section-left .input-wrapper{
    max-width: 469px;
+   margin: 0;
 }
 
 .section-big{
@@ -352,10 +360,10 @@ max-width: 550px;
   .wrapper .carousel{
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) - 12px);
+    grid-auto-columns: calc((100% / 3) - 14px);
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    gap: 16px;
+    gap: 1rem;
     border-radius: 8px;
     scroll-behavior: smooth;
     scrollbar-width: none;
@@ -383,11 +391,10 @@ max-width: 550px;
   .carousel .card {
     list-style: none;
     background: #fff;
-    border: 1px solid var(--clr-gray-1);
+    border: 1px solid rgb(190, 190, 190, .5);
     border-top: 0;
     border-radius: 14px;
     cursor: pointer; 
-    padding-bottom: 15px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -408,9 +415,7 @@ max-width: 550px;
  }
   .card-img img{
     width: 100%;
-    object-fit: cover;
-    /* max-width: 447px;
-    max-height: 263px; */
+    object-fit: cover
   }
   .carousel .card span {
     font-size: 1.31rem;
