@@ -211,6 +211,7 @@ margin-top: 5.1875rem;
     background: var(--clr-white);
     border-radius: 40px;
     margin-top: 1.5rem;
+    box-sizing: border-box;
 }
 .input-wrapper input{
     padding: 1.125rem 1.5625rem;
@@ -228,6 +229,7 @@ margin-top: 5.1875rem;
     border-radius: 40px;
     border: 1px solid var(--clr-text);
     transition: all .3s;
+    flex-shrink: 0;
 }
 .input-btn:hover{
     background-color: var(--clr-white);
