@@ -567,6 +567,15 @@ margin-top: 5.1875rem;
     }
   }
 
+  @media screen and (max-width: 500px) {
+    .input-wrapper input{
+        padding: .6rem 1rem;
+    }
+    .input-btn{
+        padding: .6rem .45rem;
+    }
+  }
+
   @media screen and (max-width: 447px) {
     .header-wrapper .btn {
       display: none;
@@ -574,4 +583,5 @@ margin-top: 5.1875rem;
     :root{
         --fs: 12px;
     }
+  
   }
